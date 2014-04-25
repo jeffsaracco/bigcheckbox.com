@@ -13,14 +13,15 @@
 
     <div id="template" style="display:none;">
       <li>
-      <input id="checkbox-#{id}" type="checkbox"/>
+      <input id="checkbox-#{id}" type="checkbox" style="display: none"/>
+      <label class="bigcheckbox" for="checkbox-#{id}"></label>
       <label for="checkbox-#{id}">#{text}</label>
       </li>
     </div>
 
     <form id="new-item" action="create">
-      <input type="text" id="item-text" />
-      <input type="submit" value="+" />
+      <input type="text" id="item-text" autocomplete="off"/>
+      <button type="submit" name="" value="">+</button>
     </form>
 
     <ul id='list'>
