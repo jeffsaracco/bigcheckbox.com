@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bigcheckbox.com</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bigcheckbox.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+    <h1>bigcheckbox.com</h1>
+    </header>
+
+    <div id="template" style="display:none;">
+      <li>
+      <input id="checkbox-#{id}" type="checkbox"/>
+      <label for="checkbox-#{id}">#{text}</label>
+      </li>
+    </div>
+
+    <form id="new-item" action="create">
+      <input type="text" id="item-text" />
+      <input type="submit" value="+" />
+    </form>
+
+    <ul id='list'>
+    </ul>
+
+    <footer>
+    &copy; 2012 Jeff Saracco | <a href="http://jeffsaracco.com">jeffsaracco.com</a>
+    </footer>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39880576-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+     </script>
+   </body>
+ </html>
