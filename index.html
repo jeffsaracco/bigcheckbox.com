@@ -12,21 +12,21 @@
     </header>
 
     <div id="template" style="display:none;">
-      <li>
+      <li id="li-#{li_id}">
       <input id="checkbox-#{id}" type="checkbox" style="display: none"/>
-      <label class="bigcheckbox" for="checkbox-#{id}"></label>
-      <label for="checkbox-#{id}">#{text}</label>
+      <label class="bigcheckbox" for="checkbox-#{id}"><img class="tick" src="tick.png"></label>
+      <div><span id="checkbox-#{id}">#{text}</span></div>
       </li>
     </div>
 
     <form id="new-item" action="create">
       <input type="text" id="item-text" autocomplete="off"/>
-      <button type="submit" name="" value="">+</button>
+      <button type="submit" name="" value=""></button>
     </form>
 
     <ul id='list'>
     </ul>
-
+<br>
     <footer>
     &copy; 2014 Jeff Saracco | <a href="http://jeffsaracco.com">jeffsaracco.com</a>
     </footer>
