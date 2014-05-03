@@ -23,7 +23,9 @@ $(function(){
 
 $(function(){
   $('ul').click(function(event){
+    event.preventDefault();
     var id = event.target.id;
+    if (id ==="" ){ id = event.target.parentElement.id; }
     if ($('#'+id).prop("checked")){
       $('#'+id).prop("checked", false)
     } else {
