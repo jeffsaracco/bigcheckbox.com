@@ -55,7 +55,7 @@ li {
   width: 100%;
   text-align: left;
   margin-bottom: 22px;
-  width: 600px;
+  width: 700px;
 }
 
 label {
@@ -70,8 +70,8 @@ input[type=checkbox]:checked ~ .bigcheckbox .tick {
  position: absolute;
  top: 0;
  left: 0;
- margin-top: -20px;
- margin-left: -10px;
+ margin-top: -8px;
+ margin-left: -15px;
 
 }
 
