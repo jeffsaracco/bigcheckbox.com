@@ -7,7 +7,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -60,6 +61,7 @@ li {
 
 label {
   font-size: 95px;
+  font-weight: 300;
   vertical-align: top;
   padding-left: 10px;
   float: left;
@@ -133,11 +135,12 @@ footer:hover a {
   margin: 0 auto 50px;
   padding: 10px;
   text-align: left;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
   font-size: 16px;
   outline: none;
   height: 70px;
-  width: 500px;
+  width: 600px;
   font-size: 70px;
 }
 
