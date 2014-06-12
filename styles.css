@@ -7,10 +7,13 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
   margin: 0;
   padding: 0;
   text-align: center;
+  width: 100%;
+  min-width: 715px;
 }
 h1 {
   margin: 0;
@@ -27,6 +30,21 @@ form {
 
 }
 
+div
+{
+  height: 104px;
+  line-height: 50px;
+}
+
+span
+{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 95px;
+  padding-left: 10px;
+  float: left;
+}
+
 ul {
   list-style: none;
   width: 50%;
@@ -37,22 +55,41 @@ li {
   display: block;
   width: 100%;
   text-align: left;
+  margin-bottom: 22px;
+  width: 700px;
 }
 
 label {
   font-size: 95px;
+  font-weight: 300;
   vertical-align: top;
+  padding-left: 10px;
+  float: left;
 }
 
-input[type=checkbox]:checked ~ .bigcheckbox{
-  background: url(tick.jpg);
-  background-size: 100%;
+input[type=checkbox]:checked ~ .bigcheckbox .tick {
+ visibility: visible;
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin-top: -8px;
+ margin-left: -15px;
+
 }
+
+img {
+  visibility: hidden;
+}
+
 button[type=submit] {
+  background: url('plus1.png') no-repeat center, #ccc;
   font-size: 22px;
   color: #050505;
   padding: 30px 30px;
   position: absolute;
+  visibility: visible;
+  height: 91px;
+  width: 91px;
 
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -72,6 +109,7 @@ button[type=submit] {
   height: 100px;
   width: 100px;
   display: inline-block;
+  position: relative;
 }
 
 footer {
@@ -97,11 +135,12 @@ footer:hover a {
   margin: 0 auto 50px;
   padding: 10px;
   text-align: left;
-  font-family: Helvetica;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
   font-size: 16px;
   outline: none;
   height: 70px;
-  width: 500px;
+  width: 600px;
   font-size: 70px;
 }
 
