@@ -32,6 +32,8 @@ $(function(){
       $('#'+id).prop("checked", true);
     }
   });
+
+  $('#item-text').focus()
 });
 
 function adjustFooter(){
