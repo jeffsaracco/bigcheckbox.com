@@ -38,8 +38,7 @@ div
 
 span
 {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   line-height: 95px;
   padding-left: 10px;
   float: left;
@@ -114,7 +113,7 @@ button[type=submit] {
 
 footer {
   color: #eee;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -144,3 +143,11 @@ footer:hover a {
   font-size: 70px;
 }
 
+
+a.clear {
+  text-decoration: none;
+  color: black;
+  display: block;
+  clear: both;
+  margin-bottom: 100px;
+}
