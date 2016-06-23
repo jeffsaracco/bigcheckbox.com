@@ -15,7 +15,7 @@ function addItem(item) {
   }
 
   var size = 1000/item.label.length;
-  if (size > 95){ size = 95; }
+  if (size > 75){ size = 75; }
   if (size < 30 ) {size = 35; }
   $('#li-' + listLength).css("font-size", size );
 }
